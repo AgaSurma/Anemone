@@ -1,0 +1,55 @@
+<div class="backdrop is-hidden" contact-us-modal>
+  <div class="contact">
+    <button class="close-btn" type="button" close-contact-us>&#10005;</button>
+    <h3 class="contact__heading">Contact us</h3>
+    <p class="contact__description">
+      If you have any additional questions or you want to clarify something before you make an order
+      please fill in your contact details. We will call you back.
+    </p>
+    <form action="javascript:void;">
+      <fieldset class="form-field contact__form-field">
+        <input
+          class="form-field__text-input contact__text-input"
+          type="text"
+          id="user-name"
+          name="user-name"
+          placeholder="Your name"
+          pattern="[A-Za-z0-9]+"
+        />
+        <label class="form-field__label" for="user-name">Name</label>
+        <svg
+          class="form-field__correct-state-icon contact__correct-state-icon"
+          width="20"
+          height="20"
+        >
+          <use href="./images/global/svg/sprite.svg#correct-state"></use>
+        </svg>
+        <svg class="form-field__error-state-icon contact__error-state-icon" width="20" height="20">
+          <use href="./images/global/svg/sprite.svg#error-state"></use>
+        </svg>
+      </fieldset>
+      <fieldset class="form-field contact__form-field">
+        <input
+          class="form-field__text-input contact__text-input"
+          type="email"
+          id="user-email"
+          name="user-email"
+          placeholder="Your email"
+          pattern="[A-Za-z0-9.@]+"
+        />
+        <label class="form-field__label" for="user-email"> Email </label>
+        <svg
+          class="form-field__correct-state-icon contact__correct-state-icon"
+          width="20"
+          height="20"
+        >
+          <use href="./images/global/svg/sprite.svg#correct-state"></use>
+        </svg>
+        <svg class="form-field__error-state-icon contact__error-state-icon" width="20" height="20">
+          <use href="./images/global/svg/sprite.svg#error-state"></use>
+        </svg>
+      </fieldset>
+      <button class="button contact__button" type="submit" open-thank-you>Send</button>
+    </form>
+  </div>
+</div>

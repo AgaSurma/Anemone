@@ -1,0 +1,93 @@
+.form-field {
+  color: $color4;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin: 0;
+  padding: 1.5em 0 0;
+
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+
+  &:hover {
+    color: $color7;
+
+    .form-field__text-input {
+      border: 1px solid $color7;
+    }
+  }
+
+  &__text-input {
+    color: $color8;
+    border: 1px solid $color5;
+    border-radius: 4px;
+    padding: 16px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: $color6;
+    }
+  }
+
+  &__label {
+    color: $color4;
+    position: absolute;
+    top: 0;
+  }
+
+  &__correct-state-icon,
+  &__error-state-icon {
+    position: absolute;
+    right: 16px;
+    bottom: 14px;
+    display: none;
+  }
+
+  &:valid {
+    color: green;
+
+    &:hover {
+      color: green;
+    }
+
+    .form-field__text-input:not(:placeholder-shown) {
+      border: 1px solid green;
+
+      & + .form-field__label {
+        color: green;
+      }
+
+      & ~ .form-field__correct-state-icon {
+        display: block;
+        fill: green;
+      }
+    }
+  }
+
+  &:invalid {
+    color: red;
+
+    &:hover {
+      color: red;
+    }
+
+    .form-field__text-input:not(:placeholder-shown) {
+      border: 1px solid red;
+
+      & + .form-field__label {
+        color: red;
+      }
+
+      & ~ .form-field__correct-state-icon {
+        display: block;
+        fill: red;
+      }
+    }
+  }
+}

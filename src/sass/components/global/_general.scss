@@ -1,0 +1,16 @@
+body {
+  font-family: $fontFamily1;
+}
+
+button {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
