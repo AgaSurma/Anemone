@@ -1,3 +1,3 @@
 GOIT Project 01  
   
-https://github.com/AgaSurma/anemone-group-project.git  
+https://gregorjosh.github.io/goit-project-01/ 
